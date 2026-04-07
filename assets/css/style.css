@@ -356,7 +356,7 @@ a:focus {
 }
 
 .navbar.navbar-default .nav-title {
-  float: left;
+  flex: 0 0 auto;
   margin: 0;
   color: #fff;
   font-family: "Oswald", sans-serif;
@@ -367,6 +367,21 @@ a:focus {
   -webkit-transition: all 0.3s;
   -o-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+.navbar.navbar-default .navbar-collapse {
+  display: -webkit-box !important;
+  display: -webkit-flex !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .navbar.navbar-default .navbar-nav>li>a {
@@ -462,7 +477,8 @@ a:focus {
 /* 2.2 navbar on lg screen */
 @media screen and (min-width: 768px) {
   .navbar.navbar-default .navbar-nav {
-    float: right;
+    float: none;
+    padding-right: 0;
   }
 
   .navbar.navbar-default .navbar-nav>li:before {
@@ -490,6 +506,7 @@ a:focus {
   }
 
   .navbar.navbar-default .navbar-collapse {
+    display: block !important;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -1080,7 +1097,12 @@ textarea:focus-visible {
 .feature-box,
 .experience-item .duration,
 .experience-item .content {
+  --card-scale: 1;
+  --card-offset-y: 24px;
   position: relative;
+  -webkit-transform: translateY(var(--card-offset-y)) scale(var(--card-scale));
+  -ms-transform: translateY(var(--card-offset-y)) scale(var(--card-scale));
+  transform: translateY(var(--card-offset-y)) scale(var(--card-scale));
   -webkit-transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
   transition: -webkit-transform 0.25s ease, -webkit-box-shadow 0.25s ease;
   -o-transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -1107,9 +1129,7 @@ textarea:focus-visible {
 .experience-item .duration:hover,
 .experience-item .content:hover {
   z-index: 2;
-  -webkit-transform: scale(1.015);
-  -ms-transform: scale(1.015);
-  transform: scale(1.015);
+  --card-scale: 1.015;
   box-shadow: 0 0 0 1px rgba(255, 138, 0, 0.22), 0 12px 28px rgba(255, 138, 0, 0.16);
 }
 
@@ -1133,10 +1153,12 @@ textarea:focus-visible {
 }
 
 .reveal {
+  --card-scale: 1;
+  --card-offset-y: 24px;
   opacity: 0;
-  -webkit-transform: translateY(24px);
-  -ms-transform: translateY(24px);
-  transform: translateY(24px);
+  -webkit-transform: translateY(var(--card-offset-y)) scale(var(--card-scale));
+  -ms-transform: translateY(var(--card-offset-y)) scale(var(--card-scale));
+  transform: translateY(var(--card-offset-y)) scale(var(--card-scale));
   -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
   -o-transition: transform 0.5s ease, opacity 0.5s ease;
@@ -1146,17 +1168,13 @@ textarea:focus-visible {
 
 .reveal.is-visible {
   opacity: 1;
-  -webkit-transform: translateY(0);
-  -ms-transform: translateY(0);
-  transform: translateY(0);
+  --card-offset-y: 0px;
 }
 
 /* Keep knowledge card hover transform after reveal animation */
 .feature-box.reveal.is-visible:hover {
   z-index: 2;
-  -webkit-transform: scale(1.015);
-  -ms-transform: scale(1.015);
-  transform: scale(1.015);
+  --card-scale: 1.015;
   box-shadow: 0 0 0 1px rgba(255, 138, 0, 0.22), 0 12px 28px rgba(255, 138, 0, 0.16);
 }
 
