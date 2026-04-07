@@ -83,58 +83,44 @@
   ],
   "portfolioItems": [
     {
-      "image": "assets/images/portfolio/portfolio2.jpg",
-      "title": "Huddly",
-      "projectLink": "https://github.com/SCuvanov/Huddly-Android",
-      "wide": false
-    },
-    {
       "image": "assets/images/portfolio/portfolio1.png",
       "title": "Salesforce Cert Checker",
-      "projectLink": "https://scuvanov.github.io/SalesforceCertScoreCalculator/",
-      "wide": true
-    },
-    {
-      "image": "assets/images/portfolio/portfolio3.jpg",
-      "title": "SoFit",
-      "projectLink": "https://github.com/SCuvanov/SoFit-Android",
-      "wide": false
+      "projectLink": "https://scuvanov.github.io/SalesforceCertScoreCalculator/"
     },
     {
       "image": "assets/images/portfolio/portfolio4.jpg",
       "title": "Omnifood",
-      "projectLink": "https://scuvanov.github.io/Omnifood/",
-      "wide": false
-    },
-    {
-      "image": "assets/images/portfolio/portfolio5.jpg",
-      "title": "Natours",
-      "projectLink": "https://scuvanov.github.io/Natours/",
-      "wide": false
-    },
-    {
-      "image": "assets/images/portfolio/portfolio7.png",
-      "title": "Trillo",
-      "projectLink": "https://scuvanov.github.io/Trillo/",
-      "wide": false
-    },
-    {
-      "image": "assets/images/portfolio/portfolio8.png",
-      "title": "Trillo",
-      "projectLink": "https://scuvanov.github.io/Trillo/",
-      "wide": false
+      "projectLink": "https://scuvanov.github.io/Omnifood/"
     },
     {
       "image": "assets/images/portfolio/portfolio6.jpg",
       "title": "Natours",
-      "projectLink": "https://scuvanov.github.io/Natours/",
-      "wide": false
+      "projectLink": "https://scuvanov.github.io/Natours/"
+    },
+    {
+      "image": "assets/images/portfolio/portfolio7.png",
+      "title": "Trillo",
+      "projectLink": "https://scuvanov.github.io/Trillo/"
     },
     {
       "image": "assets/images/portfolio/portfolio9.png",
       "title": "Nexter",
-      "projectLink": "https://scuvanov.github.io/Nexter/",
-      "wide": false
+      "projectLink": "https://scuvanov.github.io/Nexter/"
+    },
+    {
+      "image": "assets/images/portfolio/portfolio9.png",
+      "title": "Satoashi's Gamble",
+      "projectLink": "https://github.com/SCuvanov/SatoshisGamble/"
+    },    
+    {
+      "image": "assets/images/portfolio/portfolio2.jpg",
+      "title": "Huddly",
+      "projectLink": "https://github.com/SCuvanov/Huddly-Android"
+    },
+    {
+      "image": "assets/images/portfolio/portfolio3.jpg",
+      "title": "SoFit",
+      "projectLink": "https://github.com/SCuvanov/SoFit-Android"
     }
   ]
 }

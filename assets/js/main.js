@@ -18,12 +18,6 @@
         updateNavbarState();
 
         function initWidgets() {
-            if ($.fn.isotope) {
-                $('.portfolio-wrap').isotope({
-                    itemSelector: '.portfolio-item',
-                });
-            }
-
             if ($.fn.venobox) {
                 $('.img-lightbox').venobox({
                     spinner: 'double-bounce',
@@ -156,21 +150,39 @@
             $('#experience-items').html(html);
         }
 
+        function escapeAttr(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/"/g, '&quot;');
+        }
+
+        function escapeHtml(str) {
+            return String(str)
+                .replace(/&/g, '&amp;')
+                .replace(/</g, '&lt;')
+                .replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;');
+        }
+
         function buildPortfolio(items) {
             var html = items.map(function(item) {
-                var widthClass = item.wide ? ' grid-item--width2' : '';
+                var titleHtml = escapeHtml(item.title);
+                var imgAlt = escapeAttr(item.title);
                 return (
-                    '<div class="portfolio-item grid-item' + widthClass + '">' +
-                        '<div class="portfolio-thumb">' +
-                            '<img src="' + item.image + '" alt="' + item.title + '">' +
-                            '<div class="overley">' +
-                                '<div class="portfolio-title">' +
-                                    '<a href="' + item.image + '" class="img-lightbox"><i class="fa fa-search"></i></a>' +
-                                    '<h4><a href="' + item.projectLink + '" class="btn btn-primary">' + item.title + '</a></h4>' +
+                    '<article class="portfolio-item">' +
+                        '<div class="portfolio-card">' +
+                            '<a href="' + escapeAttr(item.image) + '" class="portfolio-card__media img-lightbox" aria-label="Open preview of ' + imgAlt + '">' +
+                                '<img src="' + escapeAttr(item.image) + '" alt="' + imgAlt + '" loading="lazy" decoding="async">' +
+                            '</a>' +
+                            '<div class="portfolio-card__footer">' +
+                                '<h4 class="portfolio-card__title">' + titleHtml + '</h4>' +
+                                '<div class="portfolio-card__actions">' +
+                                    '<a href="' + escapeAttr(item.image) + '" class="portfolio-card__action img-lightbox" title="Preview"><i class="fa fa-search-plus" aria-hidden="true"></i><span class="sr-only">Preview</span></a>' +
+                                    '<a href="' + escapeAttr(item.projectLink) + '" class="portfolio-card__action portfolio-card__action--external" target="_blank" rel="noopener noreferrer" title="Open project"><i class="fa fa-external-link" aria-hidden="true"></i><span class="sr-only">Open project</span></a>' +
                                 '</div>' +
                             '</div>' +
                         '</div>' +
-                    '</div>'
+                    '</article>'
                 );
             }).join('');
 
