@@ -100,7 +100,11 @@
     font-size: 25px;
     font-family: "Oswald", sans-serif;
     line-height: 25px;
-    padding: 50px 0;
+    padding: 20px 10px;
+  }
+  .experience-item .content,
+  .experience-item .content.text-right {
+    text-align: left;
   }
   .testimonial-carousel {
     position: relative;
