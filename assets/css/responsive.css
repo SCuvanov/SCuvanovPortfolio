@@ -106,6 +106,31 @@
     line-height: 25px;
     padding: 20px 10px;
     margin: 12px 0;
+    position: relative;
+  }
+  .experience-item > .col-sm-3:first-child .duration::after,
+  .experience-item > .col-md-3:first-child .duration::after,
+  .experience-item > .col-sm-3:last-child .duration::before,
+  .experience-item > .col-md-3:last-child .duration::before {
+    content: '';
+    position: absolute;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    width: 3px;
+    height: 14px;
+    margin-left: -1px;
+    margin-top: 0;
+    background: #ff8a00;
+  }
+  .experience-item > .col-sm-3:first-child .duration::after,
+  .experience-item > .col-md-3:first-child .duration::after {
+    top: 100%;
+  }
+  .experience-item > .col-sm-3:last-child .duration::before,
+  .experience-item > .col-md-3:last-child .duration::before {
+    bottom: 100%;
   }
   .experience-item .content,
   .experience-item .content.text-right {

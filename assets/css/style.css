@@ -687,6 +687,32 @@ a:focus {
   border: 8px solid #ff8a00;
   text-align: center;
   padding: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.experience-item > .col-md-3:first-child .duration::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: 30px;
+  height: 3px;
+  margin-top: -1px;
+  background: #ff8a00;
+  z-index: 0;
+}
+
+.experience-item > .col-md-3:last-child .duration::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  width: 30px;
+  height: 3px;
+  margin-top: -1px;
+  background: #ff8a00;
+  z-index: 0;
 }
 
 .experience-item .content .title {
@@ -1234,6 +1260,8 @@ textarea:focus-visible {
 .experience-item .content {
   background: var(--surface-bg);
   padding: 26px;
+  position: relative;
+  z-index: 2;
 }
 
 .experience-item .content .designation {
@@ -1243,9 +1271,16 @@ textarea:focus-visible {
 .feature-box:hover,
 .experience-item .duration:hover,
 .experience-item .content:hover {
-  z-index: 2;
   --card-scale: 1.015;
   box-shadow: 0 0 0 1px rgba(255, 138, 0, 0.22), 0 12px 28px rgba(255, 138, 0, 0.16);
+}
+
+.experience-item .duration:hover {
+  z-index: 1;
+}
+
+.experience-item .content:hover {
+  z-index: 2;
 }
 
 .contact-form {
