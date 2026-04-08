@@ -103,11 +103,10 @@
                 var paragraphs = (card.paragraphs || []).map(function(text) {
                     return '<p>' + text + '</p>';
                 }).join('');
-                var cardMarginClass = index > 2 ? ' xs-mb40' : ' mb40';
 
                 return (
                     '<div class="col-md-4 col-sm-4">' +
-                        '<div class="feature-box' + cardMarginClass + '">' +
+                        '<div class="feature-box mb40">' +
                             '<div class="feature-title">' +
                                 icons +
                                 '<h4>' + card.title + '</h4>' +

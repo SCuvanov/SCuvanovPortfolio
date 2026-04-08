@@ -491,7 +491,7 @@ a:focus {
 }
 
 /* 2.3 navbar on sm & xs screen */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .navbar {
     margin-bottom: 0;
     min-height: 72px;
@@ -506,15 +506,19 @@ a:focus {
   }
 
   .navbar.navbar-default .navbar-collapse {
-    display: block !important;
     border: 0;
     -webkit-box-shadow: none;
     box-shadow: none;
   }
 
   .navbar.navbar-default .navbar-collapse.collapse {
+    display: none !important;
     padding-left: 0;
     margin-left: 0;
+  }
+
+  .navbar.navbar-default .navbar-collapse.collapse.in {
+    display: block !important;
   }
 
   .navbar.navbar-default .navbar-nav {
@@ -616,6 +620,25 @@ a:focus {
 /* knowledge section start */
 .knowledge-section .skills-heading-row {
   padding-top: 24px;
+}
+
+#knowledge-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+#knowledge-cards > [class*=col-] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#knowledge-cards .feature-box {
+  width: 100%;
+  margin-bottom: 22px;
 }
 
 .feature-box .feature-title {

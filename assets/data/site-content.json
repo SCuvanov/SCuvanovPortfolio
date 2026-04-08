@@ -1,10 +1,10 @@
 {
   "knowledgeCards": [
     {
-      "title": "Mobile Development",
-      "icons": ["android", "apple"],
+      "title": "Salesforce",
+      "icons": ["users"],
       "paragraphs": [
-        "Mobile applications are consuming the world and developing aesthetically pleasing, feature rich mobile applications using Java, Kotlin, and Objective-C is my specialty."
+        "Certified Salesforce Developer/Admin focused on scalable Apex, Lightning, and integration solutions that are secure, maintainable, and user-friendly."
       ]
     },
     {
@@ -12,6 +12,20 @@
       "icons": ["laptop"],
       "paragraphs": [
         "I have a passion for developing pixel-perfect websites and apps using HTML, CSS, and JavaScript, with a focus on maintaining a semantic, modular, and DRY code base."
+      ]
+    },
+    {
+      "title": "Integrations",
+      "icons": ["exchange", "cloud"],
+      "paragraphs": [
+        "I design integrations that keep teams and data in sync, including Salesforce with NetSuite, BambooHR, Xactly, Google Cloud, and other enterprise systems."
+      ]
+    },
+    {
+      "title": "Database Administration",
+      "icons": ["database"],
+      "paragraphs": [
+        "By leveraging SQL and NoSQL database systems such as MS SQL Server, MySQL, PostgreSQL or MongoDB, I am able to meet all data driven needs."
       ]
     },
     {
@@ -23,24 +37,10 @@
       ]
     },
     {
-      "title": "Salesforce",
-      "icons": ["users"],
+      "title": "Mobile Development",
+      "icons": ["android", "apple"],
       "paragraphs": [
-        "Certified Salesforce Developer/Admin focused on scalable Apex, Lightning, and integration solutions that are secure, maintainable, and user-friendly."
-      ]
-    },
-    {
-      "title": "Database Administration",
-      "icons": ["database"],
-      "paragraphs": [
-        "By leveraging SQL and NoSQL database systems such as MS SQL Server, MySQL, PostgreSQL or MongoDB, I am able to meet all data driven needs."
-      ]
-    },
-    {
-      "title": "Adobe Creative Cloud",
-      "icons": ["camera"],
-      "paragraphs": [
-        "An idea is only as good as the person willing to bring it to life. When it comes time to mockup and visualize those ideas, I use the entire Adobe Creative Cloud."
+        "Mobile applications are consuming the world and developing aesthetically pleasing, feature rich mobile applications using Java, Kotlin, and Objective-C is my specialty."
       ]
     }
   ],
@@ -108,7 +108,7 @@
       "projectLink": "https://scuvanov.github.io/Nexter/"
     },
     {
-      "image": "assets/images/portfolio/portfolio9.png",
+      "image": "assets/images/portfolio/portfolio10.png",
       "title": "Satoashi's Gamble",
       "projectLink": "https://github.com/SCuvanov/SatoshisGamble/"
     },    
