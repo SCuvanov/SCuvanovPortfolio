@@ -84,18 +84,23 @@
   "portfolioItems": [
     {
       "image": "assets/images/portfolio/portfolio1.png",
-      "title": "Salesforce Cert Checker",
+      "title": "Salesforce Certification Calculator",
       "projectLink": "https://scuvanov.github.io/SalesforceCertScoreCalculator/"
     },
     {
-      "image": "assets/images/portfolio/portfolio4.jpg",
-      "title": "Omnifood",
-      "projectLink": "https://scuvanov.github.io/Omnifood/"
+      "image": "assets/images/portfolio/portfolio10.png",
+      "title": "Satoshi's Gamble",
+      "projectLink": "https://satoshis-gamble.vercel.app/"
     },
     {
       "image": "assets/images/portfolio/portfolio6.jpg",
       "title": "Natours",
       "projectLink": "https://scuvanov.github.io/Natours/"
+    },    
+    {
+      "image": "assets/images/portfolio/portfolio4.jpg",
+      "title": "Omnifood",
+      "projectLink": "https://scuvanov.github.io/Omnifood/"
     },
     {
       "image": "assets/images/portfolio/portfolio7.png",
@@ -107,11 +112,6 @@
       "title": "Nexter",
       "projectLink": "https://scuvanov.github.io/Nexter/"
     },
-    {
-      "image": "assets/images/portfolio/portfolio10.png",
-      "title": "Satoshi's Gamble",
-      "projectLink": "https://satoshis-gamble.vercel.app/"
-    },    
     {
       "image": "assets/images/portfolio/portfolio2.jpg",
       "title": "Huddly",
